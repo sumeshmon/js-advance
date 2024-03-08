@@ -13,7 +13,7 @@ function stringTest(){
 //stringTest()
 
 function boolenTest(){
-    let name = 123
+    let name = ""
     let converted = Boolean(name)
     console.log(typeof name)
     console.log(converted)
