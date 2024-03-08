@@ -4,10 +4,18 @@ let converted = Number(rollNumber)
 //console.table(converted)
 
 
-function test(){
+function stringTest(){
     let name = false
     let converted = String(name)
     console.log(typeof name)
     console.log(converted)
 }
-test()
+//stringTest()
+
+function boolenTest(){
+    let name = 123
+    let converted = Boolean(name)
+    console.log(typeof name)
+    console.log(converted)
+}
+boolenTest()
