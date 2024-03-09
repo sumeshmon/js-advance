@@ -18,4 +18,7 @@ function boolenTest(){
     console.log(typeof name)
     console.log(converted)
 }
-boolenTest()
+//boolenTest()
+
+console.log("2"+2+2);
+console.log(2+2+"2");

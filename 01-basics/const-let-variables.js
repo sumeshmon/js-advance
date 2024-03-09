@@ -6,10 +6,9 @@ userName = "sumeshks"
 let accountCountry
 
 
-let test = accountCountry = "ddd"
 
 
 accountName = "Sali"
 accountEmail = "sds"
 
-console.table([accountID,accountName,accountEmail,accountCountry,test,test1])
+console.table([accountID,accountName,accountEmail,accountCountry])

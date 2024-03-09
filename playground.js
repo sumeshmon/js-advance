@@ -3,4 +3,4 @@ function testMathRandom(){
     return Math.random()
 }
 let result = testMathRandom()
-console.log(result*color.length)
+console.log(result*color.length) 
