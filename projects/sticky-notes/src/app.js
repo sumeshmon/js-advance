@@ -17,7 +17,7 @@ addBtn.addEventListener("click",addTodo)
 
 let removeTodo = (element) => {
     element.remove();
-    console.log(element);
+    // console.log(element);
 }
 let attachRemoveEventListeners = () => {
     removeItems = document.querySelectorAll(".remove");
