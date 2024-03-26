@@ -1,6 +1,6 @@
 //  refer mdn documentation - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-const myArray = [0,1,2,3,4,5]
+const myArray = [1,2,3,4,5]
 
 //console.log(myArray.length);
 //myArray.push(100)
@@ -14,11 +14,11 @@ const myArray = [0,1,2,3,4,5]
 
 console.log("A ", myArray);
 
-const arr1 = myArray.slice(0, 3)
+const arr1 = myArray.slice(0, 2)
 console.log("Sliced", arr1);
 console.log("B ", myArray);
 
-const arr2 = myArray.splice(0,3)
+const arr2 = myArray.splice(0, 2)
 console.log("Spliced", arr2);
 console.log("C", myArray);
 
