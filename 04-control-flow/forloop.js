@@ -24,7 +24,11 @@ const india = {
         up: 'lakhnow',
         special:{
             mumbai_special: 'vadapav',
-            lakhnow_special : 'panipuri'
+            lakhnow_special : 'panipuri',
+            rating:{
+                garam_vadapav:'avarage',
+                good_panipuri: 'nice'
+            }
         }
         
     }
@@ -48,11 +52,12 @@ const india = {
 
 function iterateObject(obj) {
     for (let key in obj) {
+        //console.log(`++ ${key}`);
         if (typeof obj[key] === 'object' && obj[key] !== null) {
             console.log(`nested object are :  ${key}:`);
             iterateObject(obj[key]);
         } else {
-            console.log(`First level :  ${key}: ${obj[key]}`);
+            //console.log(`First level :  ${key}: ${obj[key]}`);
         }
     }
 }
