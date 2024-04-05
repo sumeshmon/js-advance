@@ -38,23 +38,12 @@ const india = {
 //     console.log(key, india[key]);
 // }
 
-// +++++++++++ multilevel array +++++++++++++++
-// for (let key in india) {
-//     if (typeof india[key] === 'object') {
-//         console.log(`2 Properties of ${key}:`);
-//         for (let subKey in india[key]) {
-//             console.log(`1${subKey}: ${india[key][subKey]}`);
-//         }
-//     } else {
-//         console.log(`dfgd ${key}: ${india[key]}`);
-//     }
-// }
 
 function iterateObject(obj) {
     for (let key in obj) {
         //console.log(`++ ${key}`);
         if (typeof obj[key] === 'object' && obj[key] !== null) {
-            console.log(`nested object are :  ${key}:`);
+            //console.log(`nested object are :  ${key}:`);
             iterateObject(obj[key]);
         } else {
             //console.log(`First level :  ${key}: ${obj[key]}`);
@@ -63,3 +52,13 @@ function iterateObject(obj) {
 }
 
 iterateObject(india);
+
+// break and continue
+for (let index = 1; index <= 20; index++) {   
+    if (index == 5) {
+        console.log(`dectued 5`);
+        // break
+        continue
+    }
+    console.log(index);
+}
