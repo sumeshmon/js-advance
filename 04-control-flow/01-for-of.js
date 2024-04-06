@@ -19,9 +19,11 @@ const marksMap = () =>{
     worldName.set('IN', 'India')
     worldName.set('US', 'USA')
     worldName.set('FR','France')
+    worldName.set('IN', 'India')
     // console.log(worldName);
+    // [key,val] - destructure of an array
     for (const [key,val] of worldName) {
-        console.log(key,val);
+        console.log(key, '>:', val);
     }
 }
 marksMap()
