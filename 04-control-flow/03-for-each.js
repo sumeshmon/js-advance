@@ -7,8 +7,8 @@ marks.forEach(element => {
 const car = ['BMW','Audi','Alto']
 
 // using arrow function
-const printMe = val => {
-    //console.log(val);
+const printMe = (val) => {
+    console.log(val);
 };
 car.forEach(printMe);
 
@@ -19,8 +19,8 @@ car.forEach(printMe);
 
 // forEach also fetch index and full array
 const family = ['sumesh', 'sali', 'theertha', 'tejas']
-family.forEach( (val,sumesh,arr) => {
-    //console.log(sumesh,val,arr);
+family.forEach( (val,index,arr) => {
+    // console.log(index,val,arr);
 } )
 
 // ++++++++++++ looping with array with objects ++++++++++++++
@@ -44,7 +44,7 @@ const news = [
 
 news.forEach( (param) => {
     // console.log(param);
-    console.log(param.category);
+    //console.log(param.category);
 })
 
 // ++++++++++++++ multilevel array ++++++++++++++
@@ -84,5 +84,5 @@ function printKeysAndValues(obj) {
 
 // Accessing keys and values of the india object
 india.forEach(obj => {
-    //printKeysAndValues(obj);
+    // printKeysAndValues(obj);
 });

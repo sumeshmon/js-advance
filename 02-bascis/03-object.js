@@ -1,7 +1,8 @@
 //singleton
 
 // object literals
-const mySymbol = Symbol("key1")
+const mySymbol = Symbol()
+const myTest = Symbol()
 
 const user = {
     name: "Sumesh",
@@ -12,11 +13,16 @@ const user = {
     isLoggedIn : false,
     lastLoggedDates : ["Monday", "Saturday"]
 }
+const test = {
+    [myTest] : "test symbol",
+    name : 'sumesh'
+}
 // machine will consider the key as a string
 //console.log(user.age);
 //console.log(user["age"]); 
 //console.log(user["full name"]);
 console.log(user[mySymbol]);
+console.log(test[myTest]);
 
 user.name = "sali"
 //Object.freeze(user) // can't change the object values
@@ -32,6 +38,11 @@ user.greeting = function(){
 user.greeting()
 
 user.greetingOne = function(){
-    console.log(`Greeting from Kerala, ${this[mySymbol]}`);
+    console.log(`Greeting from Kerala, ${user[mySymbol]}`);
 }
 user.greetingOne()
+
+user.greetingTest = function(){
+    console.log(`Test, ${test[myTest]}`);
+}
+user.greetingTest()

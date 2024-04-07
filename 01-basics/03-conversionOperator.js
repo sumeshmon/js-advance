@@ -8,22 +8,22 @@ let numtest = function numberTest(){
     let sum = num1 + Number(num2)
     console.log(sum);
 }
-numtest();
+//numtest();
 function stringTest(){
     let name = false
     let converted = String(name)
     console.log(typeof name)
     console.log(converted)
 }
-//stringTest()
+// stringTest()
 
 function boolenTest(){
-    let name = true
+    let name = 'sumesh'
     let converted = Boolean(name)
-    console.log(typeof name)
-    console.log(typeof converted)
+    console.log( name)
+    console.log( converted)
 }
-//boolenTest()
+boolenTest()
 
 //console.log("2"+2+2);
 //console.log(2+2+"2");

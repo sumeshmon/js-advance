@@ -1,16 +1,16 @@
 const score = 300.33
-//console.log(score) // javascript default will consider this is a number
+// console.log(score) // javascript default will consider this is a number
 
-//const balance = new Number(score)
-//console.log(balance);// this will convert the type in to number
-//const checkType = balance.toLocaleString(); // this will convert to string
+const balance = new Number(score)
+// console.log(balance);// this will convert the type in to number
+const checkType = balance.toLocaleString(); // this will convert to string
 
-//console.log(typeof (checkType));
+console.log(typeof checkType);
 // console.log(balance.toExponential());
 
 //console.log(balance.toString().length);
 
-//console.log(balance.toFixed(2));
+console.log(balance.toFixed(4));
 
 //console.log(balance.toPrecision(3));
 
@@ -34,5 +34,5 @@ const score = 300.33
 
 min = 10
 max = 20
-console.log(Math.floor((Math.random() * (max - min)) + min));
+//console.log(Math.floor((Math.random() * (max - min)) + min));
 

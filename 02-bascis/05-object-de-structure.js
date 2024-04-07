@@ -3,8 +3,11 @@ const user = {
     age: 18,
     isLoggedIn: false
 }
-//const {name} = user
-const {isLoggedIn} = user
+
+// destructuring object
+const {name} = user
+console.log(name);
+// const {isLoggedIn} = user
 const {isLoggedIn: login} = user
 
 // console.log(isLoggedIn);

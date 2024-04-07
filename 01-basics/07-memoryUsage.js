@@ -19,7 +19,7 @@ let usertwo = {
     name : "Sali",
     age : 23
 }
-userOne = usertwo
+// userOne = usertwo
 userOne.name = "Tejas"
 
 console.log(userOne, usertwo);

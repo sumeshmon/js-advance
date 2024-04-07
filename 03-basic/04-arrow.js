@@ -8,10 +8,10 @@ const user = {
         console.log(this);
     }
 }
-//user.welcomeMessage()
+// user.welcomeMessage()
 user.name = 'sali'
-//user.welcomeMessage()
-//console.log(this);
+// user.welcomeMessage()
+// console.log(this);
 
 // +++++++++++++++++++++++++ //
 // use of this keyword in function
@@ -20,22 +20,34 @@ function userdata(){
     console.log(this);
     console.log(this.name); // can't use this inside function, will get 'undefined'
 }
-//userdata()
+// userdata()
 
 // +++++++++++++++++++++++++++ //
 // this keyword in arrow function
 const userDetail = () => {
-    name = "Sumesh"
+    const name = "Sumesh"
+    console.log(this);
     console.log(this.name);
 }
-//userDetail()
+userDetail()
 
 // ++++++++++++++++++++++++++//
 // arrow function implicit return
 
 const testArrow = (param1, param2) => (param1 + param2)
-console.log(testArrow(2,3));
+//console.log(testArrow(2,3));
 
 const testObj = (test) => ({name: 'Sumesh'})
 
-console.log(testObj());
+// console.log(testObj());
+
+const testThis = function(){
+    const name = 'sumesh'
+    console.log(this.name);
+}
+testThis()
+const thisTry = () =>{
+    name:'Sumesh'
+    console.log(this);
+}
+thisTry()

@@ -1,7 +1,8 @@
 // for of
 const marks = [10,20,56,45,30]
+
 for (const i of marks) {
-    //console.log(`marks are ${i}`);    
+    console.log(`marks are ${i}`);  
 }
 
 let greetings = 'Hello World!'
@@ -14,6 +15,7 @@ for (let letters of greetings) {
 }
 
 // ++++++ map +++++
+
 const marksMap = () =>{
     const worldName = new Map()
     worldName.set('IN', 'India')
@@ -26,5 +28,4 @@ const marksMap = () =>{
         console.log(key, '>:', val);
     }
 }
-marksMap()
-
+//marksMap()

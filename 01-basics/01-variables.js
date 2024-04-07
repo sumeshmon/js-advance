@@ -11,4 +11,4 @@ let accountCountry
 accountName = "Sali"
 accountEmail = "sds"
 
-console.table([accountID,accountName,accountEmail,accountCountry])
+console.log([accountID,accountName,accountEmail,accountCountry])

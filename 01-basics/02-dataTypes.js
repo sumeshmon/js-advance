@@ -3,4 +3,4 @@ let name = "sumesh"
 let rollNumber
 let address = false
 
-console.table(["number" + number,name="sali",rollNumber,address])
+console.table(["number" + typeof number,name="sali",rollNumber,address])

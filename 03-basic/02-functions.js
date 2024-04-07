@@ -8,11 +8,17 @@ const school = {
     studentName: "Sumesh",
     age: 21
 }
-
+const car = {
+    model: "BMW",
+    price : 5000
+}
+// console.log(typeof school);
 function passObj(myObj){
     console.log(`The student name is ${myObj.studentName} and the age is ${myObj.age}`); 
+    console.log(`The car is ${myObj.model}`);
 }
-//passObj(school)
+passObj(school)
+passObj(car)
 
 // passObj({
 //     studentName : "Sali",

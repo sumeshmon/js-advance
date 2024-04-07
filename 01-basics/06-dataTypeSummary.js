@@ -2,22 +2,22 @@
 // 7 types : String, Number, undefined, boolen, null, Symbol, BigInt
 
 let myString = "sumesh"
-console.log(typeof myString);
+//console.log(typeof myString);
 
 let mynumber = 12
-console.log(typeof mynumber);
+//console.log(typeof mynumber);
 
 let isLoggedIn = false
-console.log(typeof isLoggedIn);
+//console.log(typeof isLoggedIn);
 
 let outSideTemp = null
-console.log(outSideTemp);
+//console.log(outSideTemp);
 
 let userEmail
-console.log(typeof userEmail);
+//console.log(typeof userEmail);
 
-let id = Symbol ("123")
-let userId = Symbol ("123")
+let id = Symbol (123)
+let userId = Symbol (123)
 
 console.log(id === userId);
 
@@ -46,5 +46,10 @@ const isOdd = function(){
         console.log("Not odd");
     }
 }
-isOdd()
+//isOdd()
 console.log(typeof isOdd);
+
+const checkTypeFunction = function (){
+
+}
+console.log(`Checking the type of function: yes it is a ${typeof checkTypeFunction}`);

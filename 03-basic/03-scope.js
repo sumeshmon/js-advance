@@ -3,37 +3,42 @@ let b = 20
 var c = 30
 
 if(true){
-    let b = 300    
-    //console.log(b);
+    let b = 300 
+    var c = 300   
+    const a = 3000
+    // console.log(a);
     
 }
-//console.log(a);
-//console.log(b);
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
 // scope in nested
 function one(){
     const user = "Sumesh"
-    //const email = "sdfsffs@dfds.com"
+    const email = "sdfsffs@dfds.com"
     //console.log(email);
     function two(){
         const email = "aaa@google.com"
         console.log(user);
+        console.log(email);
     }
     two()
-   
+   console.log(email);
 }
-//one()
+// one()
 
 // scope in if else
 if(true){
     const username = "sumesh"
+    const email = 'test@test.com'
     if(username === 'sumesh'){
         const email = "aaaa@gmail.com"
         //console.log(email + ' '+ username);
         //console.log(username);
     }
     //console.log(email);
-    //console.log(username);
+    // console.log(username);
 }
 
 // hoisting
