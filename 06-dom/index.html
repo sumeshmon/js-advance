@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body{
+                background-color: #000;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+       <h1>This is my title</h1>
+       <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>
+        <ul>
+            <li>First list 1</li>
+            <li>First list 2</li>
+            <li>First list 3</li>
+            <li>First list 4</li>
+            <li>First list 5</li>
+            <li>First list 6</li>
+        </ul>
+        <ul>
+            <li>Second   list 1</li>
+            <li>Second   list 2</li>
+            <li>Second   list 3</li>
+            <li>Second   list 4</li>
+            <li>Second   list 5</li>
+            <li>Second   list 6</li>
+        </ul>
+        <div class="parent">
+            <div class="child">Monday</div>
+            <div class="child">Tuesday</div>
+            <div class="child">Wednesday</div>
+            <div class="child">Thrusday</div>
+        </div>
+        <script async defer>
+            const relation = document.querySelector('.parent')
+            // console.log(relation.children); // to get the HTML collection
+            // console.log(relation.children[0].innerHTML); 
+
+            //  ++++++++++ getting values using loop +++++++++++
+            // for (let index = 0; index < relation.children.length; index++) {
+            //     const element = relation.children[index].innerHTML;
+            //     console.log(element); 
+            // }
+
+            const childOne = document.querySelector('.child')
+            //console.log(childOne);
+            // console.log(childOne.parentElement); // using this we can reduce the chaining.
+            // console.log(childOne.nextElementSibling); //to get next node
+
+            // +++++++++++++++++ nodes ++++++++++++
+            console.log(relation.childNodes); // to get the total nodes. It will calculate the space also.
+        </script>
+    </body>
+</html>
