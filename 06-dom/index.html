@@ -43,14 +43,15 @@
             <div class="child">Wednesday</div>
             <div class="child">Thrusday</div>
         </div>
+        <div id="createdElement"></div>
         <script async defer>
-            const relation = document.querySelector('.parent')
-            // console.log(relation.children); // to get the HTML collection
-            // console.log(relation.children[0].innerHTML); 
+            const parent = document.querySelector('.parent')
+            // console.log(parent.children); // to get the HTML collection
+            // console.log(parent.children[0].innerHTML); 
 
             //  ++++++++++ getting values using loop +++++++++++
-            // for (let index = 0; index < relation.children.length; index++) {
-            //     const element = relation.children[index].innerHTML;
+            // for (let index = 0; index < parent.children.length; index++) {
+            //     const element = parent.children[index].innerHTML;
             //     console.log(element); 
             // }
 
@@ -60,7 +61,57 @@
             // console.log(childOne.nextElementSibling); //to get next node
 
             // +++++++++++++++++ nodes ++++++++++++
-            console.log(relation.childNodes); // to get the total nodes. It will calculate the space also.
+            // console.log(parent.childNodes); // to get the total nodes. It will calculate the space also.
+            
+
+
+            // ++++++++++++++++++++++ create element ++++++++++++++++
+            // const addDiv = document.createElement('div')
+            // console.log(addDiv); //this will create a div element
+            //addDiv.className = 'newElement'
+            // addDiv.id = Math.round(Math.random() * 10  + 1) 
+            // addDiv.setAttribute ('title','newElement')
+            // addDiv.style.backgroundColor = 'gray'
+            // addDiv.style.padding = '5px 20px'
+            // addDiv.style.marginTop = '20px'
+            // addDiv.innerText = "I am added by JS"
+            // document.body.appendChild(addDiv)
+                
+
+            // +++++++++++++++ create element using function +++++++++++++++
+            const createEleFun = (addingClass,addId,textThroughArg,bgcolor) => {
+                const addDiv = document.createElement('div')
+                const uniqueId = Date.now();
+                //console.log(addDiv);
+                addDiv.className = addingClass;
+                addDiv.id = addId
+                addDiv.innerText = textThroughArg
+                addDiv.style.backgroundColor = bgcolor
+
+                const appendParent = document.getElementById('createdElement')
+                appendParent.appendChild(addDiv) 
+            }
+            //createEleFun('classFromArgument',Math.round(Math.random() * 10 + 1), 'I am new element, appended from JS using a function','red')
+
+
+            //  +++++++++++++ creating element using loop +++++++++++++
+            for (let i = 0; i <= 4; i++) {
+                    const createEleFun = (addingClass,addId,textThroughArg,bgcolor,index) => {
+                    const addDiv = document.createElement('div')
+                    const uniqueId = Date.now();
+                    //console.log(addDiv);
+                    addDiv.className = addingClass;
+                    addDiv.id = addId + index
+                    addDiv.innerText = textThroughArg
+                    // addDiv.style.backgroundColor = bgcolor
+                    addDiv.style.backgroundColor = index === 1 ? 'blue' : bgcolor; // Change color for the second element
+
+                    const appendParent = document.getElementById('createdElement')
+                    appendParent.appendChild(addDiv) 
+                }
+                createEleFun('classFromArgument',Math.round(Math.random() * 10 + 1), 'I am new element, appended from JS using a function','red', i)  
+            }
+
         </script>
     </body>
 </html>
