@@ -95,20 +95,19 @@
 
 
             //  +++++++++++++ creating element using loop +++++++++++++
+             const appendParent = document.getElementById('createdElement')
             for (let i = 0; i <= 4; i++) {
                     const createEleFun = (addingClass,addId,textThroughArg,bgcolor,index) => {
                     const addDiv = document.createElement('div')
-                    const uniqueId = Date.now();
+                    // const uniqueId = Date.now();
                     //console.log(addDiv);
                     addDiv.className = addingClass;
                     addDiv.id = addId + index
                     addDiv.innerText = textThroughArg
                     // addDiv.style.backgroundColor = bgcolor
-                    addDiv.style.backgroundColor = index === 1 ? 'blue' : bgcolor; // Change color for the second element
-
-                    const appendParent = document.getElementById('createdElement')
+                    addDiv.style.backgroundColor = index === 1 ? 'blue' : bgcolor; // Change color for the second element.
                     appendParent.appendChild(addDiv) 
-                }
+                } 
                 createEleFun('classFromArgument',Math.round(Math.random() * 10 + 1), 'I am new element, appended from JS using a function','red', i)  
             }
 

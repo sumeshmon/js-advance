@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+    
+</head>
+<body>
+    <h1>Notes:</h1>
+    <p>always try to use appendChild() instead of innerHTML</p>
+    <hr>
+    <h2>innerHTML()</h2>
+    <h4>The Element property innerHTML gets or sets the HTML or XML markup contained within the element.</h4>
+
+    <hr>
+
+    <h2>appendChild()</h2> 
+    <h4>method of the Node interface adds a node to the end of the list of children of a specified parent node.</h4>
+
+    <hr>
+
+    <h2>document.createElement()</h2>
+    <h4>In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.
+    <br>
+    const li = document.createElement('li')
+    </h4>
+
+    <hr>
+        
+    <h2>createTextNode()</h2>
+    <h4>Creates a new Text node. This method can be used to escape HTML characters.</h4>
+    <script>
+        const paragraph = document.body.appendChild(document.createElement("p"));
+        
+
+        // append and prepend
+        let div = document.createElement("div");
+        let p = document.createElement("p");
+        let span = document.createElement("span");
+        div.append(p);
+        div.prepend(span);
+
+        console.log(div.childNodes); // NodeList [ <span>, <p> ]
+    </script>
+</body>
+</html>

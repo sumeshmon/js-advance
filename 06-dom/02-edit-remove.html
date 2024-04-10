@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Remove</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+        <li>typescript</li>
+        <li>react</li>
+    </ul>
+    <script>
+        // ++++++ adding one more language +++++++
+        function addLanguage(language){
+            const li = document.createElement('li')
+            li.innerHTML = `${language}`
+            document.querySelector('.language').appendChild(li)
+        }
+        addLanguage('python')
+
+        // ++++++++++++ using optimized way +++++++++++++
+        function addLang(newLang){
+           const li =  document.createElement('li')
+        li.appendChild(document.createTextNode(newLang))
+        li.textContent = newLang
+           document.querySelector('.language').appendChild(li)
+
+        }
+        addLang('data science')
+
+
+
+        // edit
+
+        const secondElement = document.querySelector('.language li:nth-child(2)')
+        // secondElement.textContent = 'cpp' // can do this
+        // secondElement.innerHTML = 'foxpro' // can do this
+        // console.log(secondElement);
+
+        const newLi = document.createElement('li')
+        // console.log(newLi);
+        newLi.textContent = 'asp .net'
+        secondElement.replaceWith(newLi)
+        
+        // edit using outerHTML
+        const first = document.querySelector('.language li:nth-child(1)')
+        first.outerHTML= '<li> angular </li>'
+
+
+
+        // ++++++++++++++++++ remove ++++++++++++++++++
+        const last = document.querySelector('.language li:last-child')
+        console.log(last);
+        last.remove()
+    </script>
+</body>
+</html>
