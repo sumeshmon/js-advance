@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess number</title>
+    <style>
+        body{
+            background-color: #222;
+            color: #fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .userInput{
+            padding: 5px 10px;
+            font-size: 18px;
+        }
+        .button{
+            padding: 6px;
+            background-color: chocolate;
+            color: #fff;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Guess a Number</h2>
+        <input type="text" class="userInput">
+        <br><br>
+        <input type="button" value="Guess" class="button">
+       
+        <br><br>
+        <div class="result">
+            <div>Previous Guess: <span class="previousGuess"></span></div>
+           
+            <div>Guess remaining: <span class="guessRemaining">10</span></div>
+
+            <div class="lowOrHi"></div>
+        </div>
+    </form>
+
+
+    <script src="guess.js"></script>
+</body>
+</html>
