@@ -18,11 +18,11 @@ if(playGame){
         e.preventDefault()
         const guess = parseInt(userInput.value)
         // console.log(guess);
-        validateGuess(guess) 
+        validatingUserInput(guess) 
     })
     
 }
-function validateGuess (guess){
+function validatingUserInput (guess){
     // console.log(guess);
     if(isNaN(guess)){
         alert('Please enter a valid number')
@@ -39,14 +39,14 @@ function validateGuess (guess){
             endGame()
         } else{
             displayGuess(guess)
-            checkGuess(guess)
+            checkingUserInputWithRandomNumber(guess)
         }
     }
    
 }
 
 
-function checkGuess(guess){
+function checkingUserInputWithRandomNumber(guess){
     // empty the value + update the array + calculate the remaining numbers
     if (guess === randomNumber) {
         displayMessage(`You guessed right!`)
@@ -89,8 +89,5 @@ function newGame (){
         playGame = true
         
     })
-     
-
-    
 }
 
