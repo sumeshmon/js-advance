@@ -14,12 +14,13 @@ document.getElementById('github').addEventListener('click', function(e){
 // ++++++++++++ removing elements +++++++++++++
 
 document.getElementById('images').addEventListener('click', (e) =>{
+    console.log(e);
     // console.log(e.target.id);
-    console.log(e.target.tagName);
+    // console.log(e.target.tagName); 
     if (e.target.tagName === 'IMG') {
         let removeIt = e.target.parentNode.parentNode
-        console.log(removeIt);
-        removeIt.remove() // The issue is if clicked in li it will remove all
+        // console.log(removeIt);
+        // removeIt.remove() // The issue is if clicked in li it will remove all
     }
     
 },false)
