@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set time out and clear time out</title>
+    <style>
+        body{
+            background-color: #222; 
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Set time out</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // start the date 
+    const startDate = () => {
+        console.log('Lets start');
+        console.log(Date.now());
+    }
+    
+    document.querySelector('#start').addEventListener('click', function(){
+         stop = setInterval(startDate, 1000);
+    })
+
+    // stop the date
+    document.querySelector('#stop').addEventListener('click', function () {
+        console.log('stop clicked');
+        clearInterval(stop)
+    })
+    
+</script>
+</html>
