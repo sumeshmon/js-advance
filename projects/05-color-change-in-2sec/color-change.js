@@ -1,10 +1,26 @@
-const colorChange = (p1,p2) => {
-    document.querySelector('body').style.backgroundColor = p1,p2
+// generate ramdom color
+ 
+const randomColor = function (){
+    let hex = '012346789ABCDEF'
+    let color = '#'
+
+    for (let index = 0; index < 6; index++) {
+        color += hex[Math.floor(Math.random() * 16)] 
+    }
+    return color 
+}
+// console.log(randomColor()); 
+let intervelID
+const startChangingColor = function (){
+    function changeBgSetInterval() {
+        document.querySelector('body').style.backgroundColor = randomColor()
+    }
+    intervelID = setInterval(changeBgSetInterval, 1000);
+    
+}
+const stopChangingColor = function (){
+    clearInterval(intervelID)
 }
 
-
-start = setInterval(colorChange, 1000,'red','blue');
-
-document.querySelector('.stop').addEventListener('click', function(){
-    clearInterval(start)
-})
+document.querySelector('.start').addEventListener('click', startChangingColor);
+document.querySelector('.stop').addEventListener('click', stopChangingColor);
