@@ -8,12 +8,54 @@
         body{
             background-color: #212121;
             color: aliceblue;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table td{
+            padding: 10px;
+            border: 1px solid whitesmoke;
         }
     </style>
 </head>
 <body>
     <h2>XMLHttpRequest</h2>
-
+    <h3 class="email"></h3>
+    <button class="button">Get Email</button>
+    <figure class="table-container"><table>
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>State</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>0</code></td>
+            <td><code>UNSENT</code></td>
+            <td>Client has been created. <code>open()</code> not called yet.</td>
+          </tr>
+          <tr>
+            <td><code>1</code></td>
+            <td><code>OPENED</code></td>
+            <td><code>open()</code> has been called.</td>
+          </tr>
+          <tr>
+            <td><code>2</code></td>
+            <td><code>HEADERS_RECEIVED</code></td>
+            <td><code>send()</code> has been called, and headers and status are available.</td>
+          </tr>
+          <tr>
+            <td><code>3</code></td>
+            <td><code>LOADING</code></td>
+            <td>Downloading; <code>responseText</code> holds partial data.</td>
+          </tr>
+          <tr>
+            <td><code>4</code></td>
+            <td><code>DONE</code></td>
+            <td>The operation is complete.</td>
+          </tr>
+        </tbody>
+      </table></figure>
 </body>
 <script src="xmlhttprequest.js"></script>
 </html>
