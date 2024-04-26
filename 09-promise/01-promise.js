@@ -33,6 +33,7 @@ const promiseThree = new Promise(function(resolve,reject){
             username : 'sumesh',
             password : '123456'
         })
+        console.log('Async threee is started')
     }, 1000)
 })
 
@@ -40,3 +41,28 @@ promiseThree.then(function(param){
     console.log(param);
 })
 
+// ++++++++ promise : chaining and usage of reject and catch +++++++++++
+
+const promiseFour = new Promise(function(resolve,reject){
+    let error = false
+    setTimeout(function(){
+        if(!error){
+                resolve({name:'sumesh from promise 4 :-)', email:'test@promiseFour.com'})
+            } else{
+                reject('ERROR: Something went wrong')
+            }
+    },1000)
+    
+})
+
+// chaining
+promiseFour.then(function(param){
+    // console.log(param)
+    return param.name
+}).then(function(name){
+    console.log(name);
+}).catch(function(error){
+    console.log(error);
+}).finally( function(){
+    console.log('finally executed or rejected');
+})
