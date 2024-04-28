@@ -66,3 +66,31 @@ promiseFour.then(function(param){
 }).finally( function(){
     console.log('finally executed or rejected');
 })
+
+
+// using async
+
+async function promiseSix(){
+    try {
+        const response = await promiseSix
+        console.log(response);
+        console.log('asny sucess');
+    } catch (error) {
+        console.log(error);
+        console.log('asny fail');
+    }
+}
+promiseSix()
+
+// asnc using real api
+async function promoseSeven (){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json()
+        console.log(data);
+        console.log('Promise 7 executed');
+    } catch (error) {
+        console.log('ERROR : Something went wrong', error);
+    } 
+}
+promoseSeven()
