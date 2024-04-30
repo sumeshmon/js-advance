@@ -1,3 +1,5 @@
+const { log } = require("console");
+
 // promise using with varibale
 const promiseOne = new Promise(function (resolve,reject){
     // Do an async task
@@ -80,17 +82,34 @@ async function promiseSix(){
         console.log('asny fail');
     }
 }
-promiseSix()
+// promiseSix()
 
 // asnc using real api
-async function promoseSeven (){
+async function promiseSeven (){
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users')
         const data = await response.json()
         console.log(data);
         console.log('Promise 7 executed');
     } catch (error) {
-        console.log('ERROR : Something went wrong', error);
+        console.log('ERROR : Something went wrong  with promose Seven', error);
     } 
 }
-promoseSeven()
+// promiseSeven()
+
+//  using .then() and .catch format
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(function(response) {
+    console.log(response);
+    return response.json()  
+})
+.then((data) =>{
+    console.log(data);
+})
+.catch(function(error) {
+    console.log('Oops! Something went wrong using .then() and .catch()', error);
+})
+.finally(function() {
+    console.log('Finally block executed or rejected');
+});
+
