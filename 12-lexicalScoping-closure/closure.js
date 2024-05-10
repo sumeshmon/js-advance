@@ -7,14 +7,15 @@ function clickHandler(color){
     }
 }
 
-buttons.forEach( function(button){
-    button.addEventListener('click', function(e){
-        const passingColor = (e.target.value);
-        clickHandler(passingColor)();
+// using for each
+// buttons.forEach( function(button){
+//     button.addEventListener('click', function(e){
+//         const passingColor = (e.target.value);
+//         clickHandler(passingColor)();
 
-    })
-})
+//     })
+// })
 
-// document.querySelector('.red').onclick = clickHandler('red')
-// document.querySelector('.blue').onclick = clickHandler('blue')
+document.querySelector('.red').onclick = clickHandler('red')
+document.querySelector('.blue').onclick = clickHandler('blue')
 

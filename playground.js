@@ -1,21 +1,11 @@
-let color = ["red","blue","green","yellow","gray"]
-function testMathRandom(){
-    return Math.random()
-}
-let result = testMathRandom()
-// console.log(result*color.length) 
+const myArr = [1,2,3,4,5,6,7]
 
-// testing JS call stack
-const testCallstack1 = () =>{
-    console.log('1');
-}
-const testCallstack2 = setTimeout(() => {
-    console.log('2');
-}, 0);
-
-const testCallstack3 = () =>{
-    console.log('3');
-}
-
-testCallstack1();
-testCallstack3()
+// normal function
+myArr.filter( function(param){
+    if(param > 2){
+        console.log(param);
+    }
+})
+// arrow function
+const usingArrow = myArr.filter( (param)=> param > 2)
+// console.log(usingArrow);
