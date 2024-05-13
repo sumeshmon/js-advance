@@ -1,4 +1,5 @@
 // trying loog colors
+const button = document.querySelector('.change-bg')
 const randomColor = function() {
     let hex = '012346789ABCDEF';
     let color = '#';
@@ -8,11 +9,11 @@ const randomColor = function() {
     }
 
     // console.log(color); // Print the color code
-    return color;
+    return color; 
 };
-
-randomColor();
-
+button.addEventListener('click', function(){
+    document.body.style.backgroundColor = randomColor()
+})
 
 // 
 const myArr = [1,2,3,4,5,6,7]
