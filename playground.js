@@ -1,4 +1,4 @@
-// trying loog colors
+// +++++++++ button click bg color change +++++++++
 const button = document.querySelector('.change-bg')
 const randomColor = function() {
     let hex = '012346789ABCDEF';
@@ -11,11 +11,27 @@ const randomColor = function() {
     // console.log(color); // Print the color code
     return color; 
 };
-button.addEventListener('click', function(){
-    document.body.style.backgroundColor = randomColor()
-})
+// ++++++ using set time out ++++++
+// setInterval(() => {
+//     document.body.style.backgroundColor = randomColor()
+// }, 2000);
 
-// 
+// ++++++ using button click ++++++
+// button.addEventListener('click', function(){
+//     document.body.style.backgroundColor = randomColor()
+// })
+
+//  +++++++ for in +++++++++
+const car = {
+    brand : 'BMW',
+    model : 1980,
+    color : 'red'
+}
+for (const key in car) {
+    console.log(`Key is ${key} and object is ${car[key]}`);
+}
+
+// ++++++ filter, map, reduce +++++++++
 const myArr = [1,2,3,4,5,6,7]
 
 // normal function

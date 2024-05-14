@@ -30,11 +30,11 @@ const userCart = [
     }
 ]
 // using arrow function
-//const userTotal = userCart.reduce ( (accum,item) => (accum + item.price),0) 
+// const userTotal = userCart.reduce ( (accum,item) => (accum + item.price),0) 
 
 // using normal function
 const userTotal = userCart.reduce( function(acc,item){
     console.log(`Accum :> ${acc} - This is item ${item.price}`);
-    return item.price
+    return acc + item.price
 },0)
 console.log(`Your total bill is ${userTotal}`);
