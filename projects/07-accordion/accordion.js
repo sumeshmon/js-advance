@@ -12,5 +12,6 @@ paneltitle.forEach ( function (element, index){
 
         // Show the corresponding panel body
         panelBody[index].style.display = 'block';
+        panelBody[index].classList.add('active')
     })
 })
