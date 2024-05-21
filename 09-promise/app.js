@@ -16,6 +16,8 @@
 //     console.log('Finally block executed or rejected');
 // });
 
+const { error } = require("console");
+
 
 
 
@@ -33,4 +35,12 @@ async function getDetailsFromApi() {
 }
 
 
-getDetailsFromApi()
+// getDetailsFromApi()
+
+
+// my try 
+
+const mypromise = new Promise( (resolve, reject) => {
+    console.log(`I am a promise`)
+    resolve ( `Sucess `)
+})
