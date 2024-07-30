@@ -14,6 +14,6 @@ class School {
     }
 
 }
-
+ 
 const student1 = new School('sumesh',8,'no')
 console.log(student1.name);
