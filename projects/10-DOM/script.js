@@ -27,7 +27,9 @@ const parentElement = document.querySelector('.with-node');
 // Get the last child element
 const lastChild = parentElement.lastElementChild;
 
-console.log(lastChild); // This will log: <span>Item 3</span>
+// console.log(lastChild); // This will log: <span>Item 3</span>
 
-
+// task - append text
+const appendText = document.querySelector('#h2')
+appendText.innerHTML = appendText.innerHTML + ' ' + ', <span>Added para</span>' 
  
