@@ -32,4 +32,9 @@ const lastChild = parentElement.lastElementChild;
 // task - append text
 const appendText = document.querySelector('#h2')
 appendText.innerHTML = appendText.innerHTML + ' ' + ', <span>Added para</span>' 
+
+// task - create 3 div's with common class and add unique text to each items
+const task2 = document.querySelectorAll('.items')
+task2[0].innerText =  task2[0].innerText + ' newly added'
+
  
