@@ -35,6 +35,25 @@ appendText.innerHTML = appendText.innerHTML + ' ' + ', <span>Added para</span>'
 
 // task - create 3 div's with common class and add unique text to each items
 const task2 = document.querySelectorAll('.items')
-task2[0].innerText =  task2[0].innerText + ' newly added'
+// task2[0].innerText =  task2[0].innerText + ' newly added'
 
+// +++ using for each +++
+// task2.forEach(element => {
+//     element.innerText = element.innerText + ' newly added';
+// });
+
+// +++ using for +++
+let index = 1
+for (const div of task2) {
+    div.innerText = `New appended text  ${index} `
+   index ++
+}
+
+// get attribute
+const getAttri = document.querySelector('.parent')
+console.log(getAttri.getAttribute('name'));
+
+// set attribute
+const setAttri = document.querySelector('.parent')
+console.log(setAttri.setAttribute('name','overrided'));
  
