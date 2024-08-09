@@ -51,9 +51,21 @@ for (const div of task2) {
 
 // get attribute
 const getAttri = document.querySelector('.parent')
-console.log(getAttri.getAttribute('name'));
+// console.log(getAttri.getAttribute('name'));
 
 // set attribute
 const setAttri = document.querySelector('.parent')
-console.log(setAttri.setAttribute('name','overrided'));
- 
+// console.log(setAttri.setAttribute('name','overrided'));
+
+// DOM manipulation
+const createButton = document.createElement('button')
+const body = document.querySelector('.parent')
+createButton.innerText = 'Click me'
+// body.append(createButton)
+// body.prepend(createButton)
+// body.before(createButton)
+body.after(createButton)
+createButton.remove()
+
+
+
