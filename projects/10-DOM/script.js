@@ -64,8 +64,23 @@ createButton.innerText = 'Click me'
 // body.append(createButton)
 // body.prepend(createButton)
 // body.before(createButton)
-body.after(createButton)
-createButton.remove()
+// body.after(createButton)
+// createButton.remove()
 
+
+
+// appendChild()
+const appendChildTest = document.querySelector('.items')
+const createNewElement = document.createElement('li')
+createNewElement.innerText = "Hello"
+// appendChildTest.appendChild(createNewElement)
+
+// remove child
+const childElem = document.querySelectorAll('.items')[1]
+if(childElem.parentNode){
+    console.log(childElem.parentNode);
+    childElem.parentNode.removeChild(childElem)
+    
+}
 
 
