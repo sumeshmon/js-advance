@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Class and Append</title>
+    <style>
+        .content{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            color: #6b6b6b;
+        }
+        .newStyle {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quia aliquam autem maiores laudantium nobis? Quae earum, itaque saepe error velit non! Dolore aliquam nemo, repellendus doloremque eum delectus reiciendis?</p>
+    <script>
+        const para = document.querySelector('.content')
+        const newClass = 'newStyle'
+        // console.log(para.getAttribute('class'));
+        // console.log(para.setAttribute('class','newClass'));
+        para.classList.add(newClass)
+        
+        
+
+
+        
+                
+        
+    </script>
+</body>
+</html>

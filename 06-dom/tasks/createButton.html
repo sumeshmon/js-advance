@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Button through JS</title>
+    <style>
+        body{
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const createBtn = document.createElement('button')
+    createBtn.innerText = 'I am created by JS'
+    createBtn.style.backgroundColor = 'red';
+    createBtn.style.padding = '6px 15px';
+    createBtn.style.color = '#fff';
+    document.querySelector('body').append(createBtn)
+    
+
+</script>
+</html>
