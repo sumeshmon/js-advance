@@ -9,6 +9,12 @@ let accountCountry
 
 
 accountName = "Sali"
-accountEmail = "sds"
+accountEmail = "eeee@eee.com"
+accountCountry = 'India'
 
-console.log([accountID,accountName,accountEmail,accountCountry])
+console.log([
+    accountID,
+    accountName,
+    accountEmail,
+    accountCountry
+])
