@@ -1,25 +1,15 @@
-let accordion = document.querySelectorAll('.accordion-header')
-let accordionContents = document.querySelectorAll('.accordion-content')
+const myArr = ['1','2','3','4','5','6','7','8']
 
-accordion.forEach ( (header) => {
-   header.addEventListener ('click', () => {
-    const accordionItem = header.parentElement;   
-    const accordionContent = accordionItem.querySelector('.accordion-content')
-    
-    accordionContents.forEach((content) => {
-        if (content !== accordionContent) {
-        //   content.classList.remove("active");
-        //   content.style.maxHeight = "0";
-        }
-      });
-
-    accordionContent.classList.toggle('active') 
-       
-    if(accordionContent.classList.contains('active')){
-        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-    } else {
-        accordionContent.style.maxHeight = '0';
+const testForLoop = myArr.forEach ( (ele) => {
+    if (ele >= 5 ){
+        // console.log(ele);
+        return console.log(ele);
+        
     }
-   })
     
-})
+}) 
+// console.log(testForLoop);
+
+const testFilter = myArr.filter ( (elements) => elements >=5 )
+console.log(testFilter);
+

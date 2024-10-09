@@ -15,23 +15,53 @@
             background-color:cornsilk;
             color: #222;
         }
+        .accordion-content {
+        /* display: block; */
+        /* max-height: 1000px; */
+        transition: max-height 0.6s ease;
+        padding: 10px;
+        overflow: hidden;
+        background-color: #333333;
+        color: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        max-height: 0;
+        display: none;
+        }
+
+        .accordion-content.active {
+        display: block;
+        max-height: 1000px;
+        }
     </style>
 </head>
 <body>
     <div class="accordion">
-        <div class="title">
-            <h2>Title 1</h2>
+        <div class="accordion-item">
+          <div class="accordion-header">SECTION 1</div>
+          <div class="accordion-content">
+            <p>This is the content of section 1.</p>
+          </div> 
         </div>
-        <div class="body">
-            The code you provided loops through each character in the greetings string and prints each character except for spaces. Here is a step-by-step explanation of how the code works:     
+        <div class="accordion-item">
+          <div class="accordion-header">SECTION 2</div>
+          <div class="accordion-content">
+            <p>This is the content of section 2. This is the content of sectionThis is the content of sectionThis is the content of sectionThis is the content of section</p>
+          </div>
         </div>
-        <div class="title">
-            <h2>Title 2</h2>
+        <div class="accordion-item">
+          <div class="accordion-header">SECTION 3</div>
+          <div class="accordion-content">
+            <p>This is the content of section 3.</p>
+          </div>
         </div>
-        <div class="body">
-            The code you provided loops through each character in the greetings string and prints each character except for spaces. Here is a step-by-step explanation of how the code works:     
-        </div>
-    </div>
+        <div class="accordion-item">
+            <div class="accordion-header">SECTION 4</div>
+            <div class="accordion-content">
+              <p>This is the content of section 4.</p>
+            </div>
+          </div>
+      </div>
 </body>
-<script src="accordion.js"></script>
+<script src="accordion.js"></script> 
 </html>
