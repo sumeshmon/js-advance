@@ -5,12 +5,12 @@ const balance = new Number(score)
 // console.log(balance);// this will convert the type in to number
 const checkType = balance.toLocaleString(); // this will convert to string
 
-console.log(typeof checkType);
+// console.log(typeof checkType);
 // console.log(balance.toExponential());
 
 //console.log(balance.toString().length);
 
-console.log(balance.toFixed(4));
+// console.log(balance.toFixed(4));
 
 //console.log(balance.toPrecision(3));
 
@@ -32,7 +32,9 @@ console.log(balance.toFixed(4));
 
 //console.log(Math.random()); // to display the random number between 0 to 1
 
-min = 10
-max = 20
-//console.log(Math.floor((Math.random() * (max - min)) + min));
+min = 0
+max = 10
+// console.log(Math.floor((Math.random() * (max - min)) + min));
+console.log(Math.floor(Math.random() * (max - min)) + min);
+
 
