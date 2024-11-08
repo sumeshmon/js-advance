@@ -1,59 +1,37 @@
 
-const requestURL = 'https://randomuser.me/api/'
+// const promise = async () => {
+//     try {
+//         const response = await fetch('https://cat-fact.herokuapp.com/facts/');
+//         // Check if the response is OK (status code in the range 200-299)
+//         // if (!response.ok) {
+//         //     throw new Error(`HTTP error! status: ${response.status}`);
+//         // }
+//         const data = await response.json();  // Parse the response as JSON      
+//         console.log(data);
+//     } catch (error) {
+//         console.log('Error:', error);
+//     }
+// };
+// promise();
 
-const promiseOne = new Promise ( (resolve,reject) => {
-    setTimeout(() => {
-        //console.log(`Promise one is completed`);
-    }, 1000);
-} )
-
-promiseOne.then( () => {
-    //console.log(`the task is completed`);
-} )
-
-const promiseTwo = new Promise ( (resolve, reject) => {
-    setTimeout ( () =>{
-        const user = {name:'sumesh', age:'40'}
-        resolve(user)
-    },1000)
-})
-promiseTwo.then( (user) => {
-    //console.log(user);
-    
-})
-
-const promiseThree = new Promise ( (resolve, reject) =>{ 
-    setTimeout ( () => {
-        let error = false
+function usingThen () {
+    fetch('https://cat-fact.herokuapp.com/facts/')
+    .then( (response) => {
+        console.log(response.status);
         
-
-        let user = [
-            {
-                name:'sumesh', 
-                age:20,
-                kids: [{
-                    name: 'Theertha'
-                }]
-            }
-        ]
+        return response.json()
         
-        if (!error){
-            resolve (user)
-        } else {
-            reject('ERROR')
-        }
+            
+    })
+    .then( (nextChain) => {
+        console.log(nextChain);
 
-    },1000)
-})
+        
+    }) 
+    .catch ( (error) => {
+        console.log('Error !!!!', error);
+        
+    })
+}
 
-promiseThree.then( (user) => {
-    console.log(user);
-    return  user
-    
-}).catch ( (error) => {
-    console.log(error);
-    
-}).finally ( () =>{
-    console.log(`Either the task is completed or failed`);
-    
-})
+usingThen()
