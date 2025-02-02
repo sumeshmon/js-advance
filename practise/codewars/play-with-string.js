@@ -2,6 +2,7 @@
 // reverse(): Reverses the array.
 // join(''): Joins the array back into a string.
 function solution(str) {
+
     // console.log(typeof str);
     // const checkStr = str.split('')
     // console.log(checkStr);
@@ -11,8 +12,8 @@ function solution(str) {
     // console.log(reverse);
     return str.split('').reverse().join('')
 }
-  
-// console.log(solution('dlrow'));
+let content = 'dlrow'
+console.log(solution(content));
 
 // using loop
 // function solution1(str){
