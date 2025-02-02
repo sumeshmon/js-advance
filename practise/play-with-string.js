@@ -30,4 +30,26 @@ function solution2(str){
     return str.split('').reduce((reverse,char) => char + reverse, '');
 }
 
-console.log(solution2('dlrow'));
+// console.log(solution2('dlrow'));
+
+
+// string to number
+function numberToString (str){
+    // return  str.toString()
+    // return typeof `${str}`
+    return String(str)
+}
+// console.log(numberToString(123456));
+
+function makeNegative(str){
+    // return str < 0 ? str : -str
+    return -Math.abs(str);
+    // if (str < 0) {
+    //     return str
+    // } else {
+    //     return -str
+    // }
+    
+}
+console.log(makeNegative(-60));
+
