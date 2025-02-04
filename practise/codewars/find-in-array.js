@@ -9,12 +9,13 @@ function countSheeps (param){
     // console.log(param.length);
     
     let count  = 0
+    
     // for (let i = 0; i < param.length; i++){
     //     if(param[i] === true){
     //         count++
-    //     }
-        
+    //     }  
     // }
+    // return count 
 
     // param.forEach(element => {
     //     if (element){
