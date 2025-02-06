@@ -3,6 +3,9 @@ function countBy ( x, y ){
     // using for loop
     for (let i = 1; i <= y; i++){    
        let count = x * i 
+    //    if ( count % 2 ===0){
+    //     z.push(count)
+    //    }
        z.push(count)
     }
     return z
