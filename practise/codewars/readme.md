@@ -6,4 +6,5 @@ reverse() : Reverses the array.
 .trim() : removes any extra spaces at the beginning or end of the resulting string.
 .toString() : convert to a string
 .replace(searchValue, newValue) : replace with searchValue to  newValue
-.at(-1) : returns the last character of the string. 
+.at(-1)  / .length(-1): returns the last character of the string. 
+.sort() :  is a method for arrays

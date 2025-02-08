@@ -1,12 +1,13 @@
-function feast (beast, dish){
-    const FormattedBeast = beast.toString().replace(/[\s-]/g,'')
-    const FormattedDish = dish.toString().replace(/[\s-]/g,'')
+function feast (beast, dish){    
+    const FormattedBeast = beast.toString().toLowerCase().replace(/[\s-]/g,'')
+    const FormattedDish = dish.toString().toLowerCase().replace(/[\s-]/g,'')
     if ( FormattedBeast[0] === FormattedDish[0]  && FormattedBeast.at(-1) === FormattedDish.at(-1)){
         return true
     }
     return false
+    
 }
-console.log(feast('goatic','garlic'));
+console.log(feast('goatic','Garlic'));
 
 // problem
 // All of the animals are having a feast! Each animal is bringing one dish. There is just one rule: the dish must start and end with the same letters as the animal's name. For example, the great blue heron is bringing garlic naan and the chickadee is bringing chocolate cake.
