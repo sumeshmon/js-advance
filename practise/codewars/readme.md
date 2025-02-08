@@ -8,3 +8,4 @@ reverse() : Reverses the array.
 .replace(searchValue, newValue) : replace with searchValue to  newValue
 .at(-1)  / .length(-1): returns the last character of the string. 
 .sort() :  is a method for arrays
+Math.abs : returns the absolute value of a number, meaning it removes the negative sign if there is one.
