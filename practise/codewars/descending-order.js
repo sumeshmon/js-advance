@@ -6,6 +6,7 @@ function descendingOrder (n) {
 
     // another method
     // return Number(n.toString().split('').sort( (a,b) => b-a).join(''))
+   
     return Number(String (n) .split('').sort ( ( a,b) => b-a).join(''))
 }
 
