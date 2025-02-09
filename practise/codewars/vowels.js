@@ -1,9 +1,10 @@
 function getCount (str){
-    // return str.split('').filter( (char => 'aeiou'.includes(char)).length);
+    let vowels = 'aeiou'
+    //return str.split('').filter( (char => vowels.includes(char))).length
     
     // using normal function
     return str.split('').filter ( function (char){
-        let vowels = 'aeiou'
+        
         return vowels.includes(char)
     } ).length
 }
