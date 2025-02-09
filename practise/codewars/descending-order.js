@@ -8,9 +8,15 @@ function descendingOrder (n) {
     // return Number(n.toString().split('').sort( (a,b) => b-a).join(''))
    
     return Number(String (n) .split('').sort ( ( a,b) => b-a).join(''))
+
+    // testing parseInt
+    // let test = parseInt(n)
+    // console.log(typeof test);
+    
+    // return parseInt(n)
 }
 
-console.log(descendingOrder(2254789));
+console.log(descendingOrder(5665665));
 
 // problem
 // Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
