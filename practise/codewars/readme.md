@@ -5,7 +5,6 @@ reverse() : Reverses the array.<br><br>
     .join(' ') :	"H e l l o" (with spaces)<br>
     .join() : "H,e,l,l,o" (with commas)<br>
     .join('') : "Hello" (no separator)<br><br>
-test() method in RegExp instances searches for a match between a regular expression and a string. It returns true if there is a match and false if there is not.
 
 .slice() : returns a new array, leaving original unchanged.<br>
 
