@@ -1,10 +1,13 @@
 function isIsogram (str){
     str = str.toLowerCase()
-   
-    
+      
     let removeDuplicated = [... new Set (str)].join('')
-     console.log(removeDuplicated);    
 
+    // testing new Set()
+    // let removeDuplicated = new Set (str)
+    // removeDuplicated = [... removeDuplicated]
+    // console.log(removeDuplicated);    
+    // test end
     return  removeDuplicated === str
 
 }

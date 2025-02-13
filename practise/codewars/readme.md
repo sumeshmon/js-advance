@@ -8,8 +8,11 @@ reverse() : Reverses the array.<br><br>
 
 .slice() : returns a new array, leaving original unchanged.<br>
 
-.localeCompare() : When sorting an array of strings, we use .localeCompare() inside the sort() method.<br>
+.localeCompare() : When sorting an array of strings, we use .localeCompare() inside the sort() method.<br><br>
+
 Math.abs : returns the absolute value of a number, meaning it removes the negative sign if there is one.<br>
+Math.min() : returns the smallest number from a set of numbers.<br>
+Math.max() : returns the largest number from a set of numbers.<br>
 
 .includes() : method checks if a string or array contains a specific value. It returns true if the value is found, otherwise false.<br>
 
@@ -37,7 +40,16 @@ parseInt(var, 2)  : convert binary to a number<br>
     ✅ Transform matched values using a function<br>
     ✅ Reformat text using capture groups ($1, $2, ...)<br><br>
     
-...new Set(someString) : remove duplicate characters from a string while keeping their original order<br>
+...new Set(someString) : Creates a Set and immediately spreads it into an array. This method is often used to remove duplicates from an array.<br>
+
+new Set() : creates a Set object, which stores unique values.No duplicates are allowed in a Set()<br>
+
+let setExample = new Set([1, 2, 2, 3, 4, 4]);
+console.log(setExample); // Output: Set { 1, 2, 3, 4 }
+console.log(setExample.size); // Output: 4
+<br>
+Set objects don't have array methods like .map() or .filter(), so sometimes, you need to convert them to an array.
+<br><br>
 
 .at(-1)  / .length(-1): returns the last character of the string. <br>
 
