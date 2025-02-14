@@ -1,14 +1,21 @@
 split('') : Converts the string into an array of characters. <br>
-reverse() : Reverses the array.<br><br>
+[...variable] : spread operator (...) allows you to expand an iterable (like an array, string, or object) into individual elements.
+<br>
+When to Use Which?<br>
+Use Case	Method<br>
+✅ Basic character splitting	Either [...word] or word.split('')<br>
+✅ Performance on large strings	let letters = [...word] (faster)<br>
+❌ Handling emojis & special Unicode	Use Array.from(word) instead<br>
+
+<br><br>
+reverse() : Reverses the array.<br>
 
 .join() : convert an array into a string <br>
     .join(' ') :	"H e l l o" (with spaces)<br>
     .join() : "H,e,l,l,o" (with commas)<br>
     .join('') : "Hello" (no separator)<br><br>
 
-.slice() : returns a new array, leaving original unchanged.<br>
-
-.localeCompare() : When sorting an array of strings, we use .localeCompare() inside the sort() method.<br><br>
+.slice() : returns a new array, leaving original unchanged.<br><br>
 
 Math.abs : returns the absolute value of a number, meaning it removes the negative sign if there is one.<br>
 Math.min() : returns the smallest number from a set of numbers.<br>
@@ -57,9 +64,20 @@ Set objects don't have array methods like .map() or .filter(), so sometimes, you
     ✅ By default, .sort() sorts strings alphabetically (A-Z).<br>
     ✅ For numbers, always use (a - b) for correct sorting.<br>
     ✅ You can use localeCompare() for case-insensitive sorting.<br>
-    ✅ It modifies the original array, so use .slice() if you need a copy.<br><br>
+    ✅ It modifies the original array, so use .slice() if you need a copy.<br>
 
+.localeCompare() : When sorting an array of strings, we use .localeCompare() inside the sort() method.<br>
 
+case sensitivity : fruits.sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }))
+numbers : numbers.sort((a, b) => a.localeCompare(b, "en", { numeric: true }));<br>
+words : words.sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "accent" }));
+<br>
+ Conclusion<br>
+✅ For basic English sorting, sort() works fine.
+❌ But sort() is case-sensitive and doesn't handle accents or numbers well.
+✅ Use localeCompare() for case-insensitive, numeric, and accent-aware sorting.
+
+<br><br>
 .filter() : Removes elements from an array based on a condition (returns a filtered array).<br>
 .map(): Transforms each element in an array and returns a new array.<br>
 .reduce() :	Condenses an array into a single value (sum, product, object, etc.).<br>

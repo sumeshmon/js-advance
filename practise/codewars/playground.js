@@ -1,15 +1,8 @@
 function understandLoop (){
-    // for (let i = 0; i <=10; i++){
-    //     let star = '*'
+let fruits = ["banana", "Apple", "cherry"];
+fruits.sort((a, b) => a.localeCompare(b));
 
-    //     for (let j = 1; j <= i; j++){
-    //        star += '*'
-    //     }
-    //     console.log(star,i);
-        
-    // }
-    let testSize = new Set ([1,1,1,2,3,4,5])
-    console.log(testSize.size);
+console.log(fruits); // Output: ["Apple", "banana", "cherry"]
     
 }
 understandLoop()
