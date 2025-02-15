@@ -68,7 +68,10 @@ Set objects don't have array methods like .map() or .filter(), so sometimes, you
 
 .localeCompare() : When sorting an array of strings, we use .localeCompare() inside the sort() method.<br>
 
-case sensitivity : fruits.sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }))
+case sensitivity : fruits.sort((a, b) => a.localeCompare(b, "en", { sensitivity: "case" })) <br>
+    Case-Sensitive Sorting > sensitivity: "case"<br>
+    Ignoring Accents (diacritics) : sensitivity: "base" <br>
+    
 numbers : numbers.sort((a, b) => a.localeCompare(b, "en", { numeric: true }));<br>
 words : words.sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "accent" }));
 <br>
