@@ -7,11 +7,18 @@ function printerError(s) {
         errors ++
       }
     }
-
+    console.log(`${errors}/${s.length}`);
     
-    return `${errors }/${s.length}`
-  }
+
+    // using filter
+    // const printErrors = s.split('').filter(char => {      
+    //   return char > 'm'
+
+    // }).length;
+    // return `${printErrors}/${s.length}`;
+    
   
+}
   console.log(printerError('aaaxbbbbyyhwawiwjjjwwm'));
   
 
