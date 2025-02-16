@@ -31,6 +31,8 @@ Math.max() : returns the largest number from a set of numbers.<br>
 
 .toString() : convert to a string<br>
 .toString(2) : convert number to binary<br><br>
+.length : on the string to get the number of characters (digits). Not numbers. <br>
+
 
 parseInt("123") // 123<br>
 parseInt("42px") // 42 (ignores non-numeric characters after numbers)<br>
@@ -83,4 +85,16 @@ words : words.sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "accent" })
 <br><br>
 .filter() : Removes elements from an array based on a condition (returns a filtered array).<br>
 .map(): Transforms each element in an array and returns a new array.<br>
-.reduce() :	Condenses an array into a single value (sum, product, object, etc.).<br>
+.reduce() :	Condenses an array into a single value (sum, product, object, etc.).<br><br>
+
+
+return /^(\d{4}|\d{6})$/.test(pin);<br>
+Regular Expression:<br>
+The regex is written between two forward slashes (/).<br>
+The caret ^ asserts that the match must begin at the start of the string.<br>
+\d This matches any digit (0 through 9).<br>
+The {4} means "exactly 4 occurrences" of a digit.<br>
+The pipe | acts as a logical OR.<br>
+The dollar sign $ asserts that the match must end at the end of the string. This ensures that after the 4 or 6 digits, there are no extra characters.<br>
+This ensures that after the 4 or 6 digits, there are no extra characters.<br>
+The .test() method is called on the regex.<br>
