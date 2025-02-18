@@ -1,12 +1,16 @@
-function understandLoop (){
-    let words = ["apple", "Banana", "cherry", "banana"];
-    let numbers = [5,9,3,4,8,2]
+let str = "hello world!";
+let result = str.replace(/l/g, "x");
+console.log(result); // "hexxo worxd!"
 
-    numbers.sort( );
+// let str = "hello world!";
+// let result = str.replaceAll("l", "x");
+// console.log(result); // "hexxo worxd!"
 
-console.log(numbers); 
-    
-}
-understandLoop()
+// Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
 
-// sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }))
+// Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+
+// Example:
+// n= 5, m=5: 25
+// n=-5, m=5:  0
+// Waiting for translations and Feedback! Thanks!
