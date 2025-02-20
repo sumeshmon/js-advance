@@ -1,11 +1,11 @@
 function grow (x) {
     // using for
-    // let count = 1
-    // for ( let i = 1 ; i < x.length; i++) {        
-    //     count *= x[i]
+    let count = 1
+    for ( let i = 1 ; i < x.length; i++) {   
+        count *= x[i]
         
-    // }
-    // return count
+    }
+    return count
 
 
     // using reduce
