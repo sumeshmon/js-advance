@@ -1,6 +1,7 @@
 function friend(friends){
     return friends.filter (ele => ele.length === 4)
     
+    
 }
 friendsArray = ["Ryan", "Kieran", "Jason", "Yous"]
 console.log(friend (friendsArray));
