@@ -33,6 +33,18 @@ Math.max() : returns the largest number from a set of numbers.<br>
 .toString(2) : convert number to binary<br><br>
 .length : on the string to get the number of characters (digits). Not numbers. <br>.length works on strings and arrays, but not on numbers.<br> Numbers are not sequences of digits; they are stored as numeric values, not as individual characters.
 
+<br><br>
+Number.isInteger() - Number.isInteger(value) checks if a given value is an integer (whole number).<br>
+Key Features of Number.isInteger()<br>
+✅ Only returns true for actual integers<br>
+❌ Does not convert strings (unlike parseInt())<br>
+❌ Returns false for NaN, Infinity, and decimals<br><br>
+
+Math.sqrt(x) returns the square root of a number x<br><br>
+How Math.sqrt() Works<br>
+If x is a perfect square, it returns an integer.<br>
+If x is not a perfect square, it returns a decimal (floating-point number).<br>
+If x is negative, it returns NaN (Not a Number).<br><br>
 
 parseInt("123") // 123<br>
 parseInt("42px") // 42 (ignores non-numeric characters after numbers)<br>
