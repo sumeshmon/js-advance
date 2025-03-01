@@ -31,7 +31,7 @@ Math.max() : returns the largest number from a set of numbers.<br>
 
 .toString() : convert to a string<br>
 .toString(2) : convert number to binary<br><br>
-.length : on the string to get the number of characters (digits). Not numbers. <br>
+.length : on the string to get the number of characters (digits). Not numbers. <br>.length works on strings and arrays, but not on numbers.<br> Numbers are not sequences of digits; they are stored as numeric values, not as individual characters.
 
 
 parseInt("123") // 123<br>
