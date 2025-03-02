@@ -20,6 +20,7 @@ reverse() : Reverses the array.<br>
 Math.abs : returns the absolute value of a number, meaning it removes the negative sign if there is one.<br>
 Math.min() : returns the smallest number from a set of numbers.<br>
 Math.max() : returns the largest number from a set of numbers.<br>
+Math.floor() : is a JavaScript function that rounds a number down to the nearest integer. <br>
 
 .includes() : method checks if a string or array contains a specific value. It returns true if the value is found, otherwise false.<br>
 
