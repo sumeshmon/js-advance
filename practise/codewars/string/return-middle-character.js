@@ -1,7 +1,8 @@
 function getMiddle(s) {
     charCount = Math.floor(s.length / 2)
     // if (s.length % 2 === 0){
-    //     return s[charCount - 1] + s[charCount]       
+    //     console.log(s[charCount - 1] + s[charCount]);
+             
         
     // } 
     // return s[charCount]
@@ -10,7 +11,7 @@ function getMiddle(s) {
     return s.length % 2 === 0 ? s[charCount - 1] + s[charCount] : s[charCount]
      
 }
-console.log(getMiddle('hello'));
+console.log(getMiddle('sumeshk'));
 
 // problem
 // You are going to be given a non-empty string. Your job is to return the middle character(s) of the string.
