@@ -50,6 +50,7 @@ If x is a perfect square, it returns an integer.<br>
 If x is not a perfect square, it returns a decimal (floating-point number).<br>
 If x is negative, it returns NaN (Not a Number).<br><br>
 
+The parseInt() function is used to convert a string into an integer.<br>
 parseInt("123") // 123<br>
 parseInt("42px") // 42 (ignores non-numeric characters after numbers)<br>
 parseInt("007") // 7 (removes leading zeros)<br>
