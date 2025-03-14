@@ -1,16 +1,13 @@
-let str = "hello world!";
-let result = str.replace(/l/g, "x");
-console.log(result); // "hexxo worxd!"
-
-// let str = "hello world!";
-// let result = str.replaceAll("l", "x");
-// console.log(result); // "hexxo worxd!"
-
-// Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
-
-// Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
-
-// Example:
-// n= 5, m=5: 25
-// n=-5, m=5:  0
-// Waiting for translations and Feedback! Thanks!
+function squareSum(...numbers) {
+    // console.log( 2 ** 3);
+    //console.log(Math.pow(2,3));
+    
+    
+    let sum = 0
+    numbers.forEach(num => {
+    //  sum += Math.pow (num,2)
+        sum += num ** 2
+    });
+    return sum
+}
+console.log(squareSum(1,2,2));

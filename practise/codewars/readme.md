@@ -21,6 +21,9 @@ Math.abs : returns the absolute value of a number, meaning it removes the negati
 Math.min() : returns the smallest number from a set of numbers.<br>
 Math.max() : returns the largest number from a set of numbers.<br>
 Math.floor() : is a JavaScript function that rounds a number down to the nearest integer. <br>
+Math.ceil() : rounds a number up to the nearest integer.  console.log(Math.ceil(4.2)); // Output: 5<br>
+Math.pow(2, 3): 2 * 2 * 2 same as (2 ** 3) <br> Means it will take index and multiple live 2 * 2 * 2 = 8 <br>
+
 
 .includes() : method checks if a string or array contains a specific value. It returns true if the value is found, otherwise false.<br>
 
@@ -110,4 +113,12 @@ The {4} means "exactly 4 occurrences" of a digit.<br>
 The pipe | acts as a logical OR.<br>
 The dollar sign $ asserts that the match must end at the end of the string. This ensures that after the 4 or 6 digits, there are no extra characters.<br>
 This ensures that after the 4 or 6 digits, there are no extra characters.<br>
-The .test() method is called on the regex.<br>
+The .test() method is called on the regex.<br><br>
+
+Assignment Operators <br>
+Operator	Equivalent To	Example <br>
++=	        a = a + b	x += 5 (adds 5 to x) <br>
+-=	        a = a - b	x -= 3 (subtracts 3 from x) <br>
+*=	        a = a * b	x *= 2 (multiplies x by 2)<br>
+/=	        a = a / b	x /= 4 (divides x by 4)<br>
+**= 	    a = a ** b	x **= 2 (raises x to the power of 2)<br>
