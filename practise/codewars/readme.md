@@ -14,22 +14,38 @@ reverse() : Reverses the array.<br>
     .join(' ') :	"H e l l o" (with spaces)<br>
     .join() : "H,e,l,l,o" (with commas)<br>
     .join('') : "Hello" (no separator)<br><br>
+    
 
-.slice() : returns a new array, leaving original unchanged.<br><br>
+.slice() : to extract a portion of an array or string without modifying the original.<br><br>
 
 Math.abs : returns the absolute value of a number, meaning it removes the negative sign if there is one.<br>
 Math.min() : returns the smallest number from a set of numbers.<br>
 Math.max() : returns the largest number from a set of numbers.<br>
 Math.floor() : is a JavaScript function that rounds a number down to the nearest integer. <br>
 Math.ceil() : rounds a number up to the nearest integer.  console.log(Math.ceil(4.2)); // Output: 5<br>
-Math.pow(2, 3): 2 * 2 * 2 same as (2 ** 3) <br> Means it will take index and multiple live 2 * 2 * 2 = 8 <br>
+Math.pow(2, 3): 2 * 2 * 2 same as (2 ** 3) <br> Means it will take index and multiple live 2 * 2 * 2 = 8 <br><br>
 
+Array.isArray(value) : checks whether a given value is an array. It returns true if the value is an array and false otherwise<br>
+console.log(Array.isArray([1, 2, 3]));  // true <br>
+console.log(Array.isArray("hello"));    // false<br><br>
 
-.includes() : method checks if a string or array contains a specific value. It returns true if the value is found, otherwise false.<br>
+map(Number) : is a shorthand for converting all elements of an array to numbers.<br>
+
+.includes() : method checks if a string or array contains a specific value. It returns true if the value is found, otherwise false. <br>
 
 .indexOf() : method searches for a value in a string or array and returns its index (position). If the value is not found, it returns -1.<br>
 
+repeat() :  repeating a string a specified number of times. It does not modify the original string but returns a new one. Works only on strings, not arrays. <br>
+
+const indent = " ".repeat(4);<br>
+console.log(indent + "Indented text");<br>
+// Output: "    Indented text"<br>
+
+console.log("hello ".repeat(3));<br>
+// Output: "hello hello hello "<br><br>
+
 .endsWith() : method in JavaScript is used to check whether a string ends with a specified substring <br>
+console.log(str.endsWith("world")); // true <br>
 
 .trim() : removes any extra spaces at the beginning or end of the resulting string.<br><br>
 
@@ -100,8 +116,12 @@ words : words.sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "accent" })
 ✅ Use localeCompare() for case-insensitive, numeric, and accent-aware sorting.
 
 <br><br>
-.filter() : Removes elements from an array based on a condition (returns a filtered array).<br>
+.filter() : Removes elements from an array based on a condition (returns a filtered array).<br><br>
+
 .map(): Transforms each element in an array and returns a new array.<br>
+.map(Number) : convert an array of strings (or other values) into an array of numbers.<br>
+const squares = numbers.map(num => num * num);<br><br>
+
 .reduce() :	Condenses an array into a single value (sum, product, object, etc.).<br><br>
 
 
