@@ -142,4 +142,12 @@ Operator	Equivalent To	Example <br>
 -=	        a = a - b	x -= 3 (subtracts 3 from x) <br>
 *=	        a = a * b	x *= 2 (multiplies x by 2)<br>
 /=	        a = a / b	x /= 4 (divides x by 4)<br>
-**= 	    a = a ** b	x **= 2 (raises x to the power of 2)<br>
+**= 	    a = a ** b	x **= 2 (raises x to the power of 2)<br><br>
+
+loops<br><br>
+
+for >	Best for full control, large datasets	✅ Yes	❌ No	❌ No<br>
+forEach() >	Simple array iteration	❌ No	❌ No	❌ No<br>
+map() >	When transforming data into a new array	❌ No	✅ Yes	❌ No<br>
+for...in >	Looping through object keys	✅ Yes	❌ No	✅ Yes<br>
+for...of	> Looping through array values, iterables	✅ Yes	❌ No	❌ No<br>
