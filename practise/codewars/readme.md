@@ -144,10 +144,4 @@ Operator	Equivalent To	Example <br>
 /=	        a = a / b	x /= 4 (divides x by 4)<br>
 **= 	    a = a ** b	x **= 2 (raises x to the power of 2)<br><br>
 
-loops<br>
-Loop Type	Use Case	Supports break / continue?	Returns a New Array?	Works on Objects?<br>
-for >	Best for full control, large datasets	✅ Yes	❌ No	❌ No<br>
-forEach() >	Simple array iteration	❌ No	❌ No	❌ No<br>
-map() >	When transforming data into a new array	❌ No	✅ Yes	❌ No<br>
-for...in >	Looping through object keys	✅ Yes	❌ No	✅ Yes<br>
-for...of	> Looping through array values, iterables	✅ Yes	❌ No	❌ No<br>
+<table data-start="3015" data-end="3551" node="[object Object]"><thead data-start="3015" data-end="3115"><tr data-start="3015" data-end="3115"><th data-start="3015" data-end="3027">Loop Type</th><th data-start="3027" data-end="3038">Use Case</th><th data-start="3038" data-end="3071">Supports <code data-start="3049" data-end="3056">break</code> / <code data-start="3059" data-end="3069">continue</code>?</th><th data-start="3071" data-end="3094">Returns a New Array?</th><th data-start="3094" data-end="3115">Works on Objects?</th></tr></thead><tbody data-start="3195" data-end="3551"><tr data-start="3195" data-end="3266"><td><code data-start="3197" data-end="3202">for</code></td><td>Best for full control, large datasets</td><td>✅ Yes</td><td>❌ No</td><td>❌ No</td></tr><tr data-start="3267" data-end="3328"><td><code data-start="3269" data-end="3280">forEach()</code></td><td>Simple array iteration</td><td>❌ No</td><td>❌ No</td><td>❌ No</td></tr><tr data-start="3329" data-end="3404"><td><code data-start="3331" data-end="3338">map()</code></td><td>When transforming data into a new array</td><td>❌ No</td><td>✅ Yes</td><td>❌ No</td></tr><tr data-start="3405" data-end="3472"><td><code data-start="3407" data-end="3417">for...in</code></td><td>Looping through object keys</td><td>✅ Yes</td><td>❌ No</td><td>✅ Yes</td></tr><tr data-start="3473" data-end="3551"><td><code data-start="3475" data-end="3485">for...of</code></td><td>Looping through array values, iterables</td><td>✅ Yes</td><td>❌ No</td><td>❌ No</td></tr></tbody></table>
