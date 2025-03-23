@@ -144,8 +144,8 @@ Operator	Equivalent To	Example <br>
 /=	        a = a / b	x /= 4 (divides x by 4)<br>
 **= 	    a = a ** b	x **= 2 (raises x to the power of 2)<br><br>
 
-loops<br><br>
-
+loops<br>
+Loop Type	Use Case	Supports break / continue?	Returns a New Array?	Works on Objects?
 for >	Best for full control, large datasets	✅ Yes	❌ No	❌ No<br>
 forEach() >	Simple array iteration	❌ No	❌ No	❌ No<br>
 map() >	When transforming data into a new array	❌ No	✅ Yes	❌ No<br>
