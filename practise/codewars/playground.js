@@ -1,13 +1,12 @@
-let myArr = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
-
-function testForLoop(data){
-    data.forEach(element => {
-        [a,b] = element
-        console.log(`A is ${a} B is ${b}`);
-        
-        
-    });
+var min = function(list){
     
+    return Math.min(...list)
 }
 
-console.log(testForLoop(myArr));
+var max = function(list){
+    
+    return Math.max(...list)
+}
+
+console.log(min([4,6,2,1,9,63,-134,566]));
+console.log(max([4,6,2,1,9,63,-134,566]) );
