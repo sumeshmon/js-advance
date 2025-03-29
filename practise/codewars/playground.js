@@ -1,14 +1,5 @@
-Object.defineProperty(
-    String.prototype,  // Modifies the String prototype
-    'toJadenCase',     // Defines a new method called 'toJadenCase'
-    { 
-      value: function toJadenCase() {  // The function that will be executed
-        return this.split(' ')
-        .map(  word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ')
-                
-      }
-    }
-  );
-
-  console.log("how can mirrors be real if our eyes aren't real".toJadenCase());
+function filter_list(l) {
+  return l.filter(Number.isInteger)
+  
+}
+console.log(filter_list([1,2,'aasf','1','123',123]));
