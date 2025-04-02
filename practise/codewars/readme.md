@@ -60,7 +60,7 @@ Key Features of Number.isInteger()<br>
 ❌ Does not convert strings (unlike parseInt())<br>
 ❌ Returns false for NaN, Infinity, and decimals<br><br>
 
-Math.sqrt(x) returns the square root of a number x<br><br>
+Math.sqrt(x) returns the square root of a number x<br> Math.sqrt() works on numbers, not arrays!<br><br>
 How Math.sqrt() Works<br>
 If x is a perfect square, it returns an integer.<br>
 If x is not a perfect square, it returns a decimal (floating-point number).<br>
