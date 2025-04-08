@@ -148,3 +148,27 @@ Operator	Equivalent To	Example <br>
 
 <br><br>
 Object.defineProperty: This method allows defining or modifying properties of an object in a precise way.
+<br><br>
+Destructuring:<br>
+Destructuring is a syntax in JavaScript that lets you unpack values from arrays or pull out properties from objects and assign them to variables — all in one line.<br><br>
+Object Destructuring<br>
+const user = {
+  name: "Alice",
+  age: 25,
+  city: "New York"
+};
+<br>
+// Destructure properties into variables<br>
+const { name, age } = user;
+<br>
+console.log(name); // Alice<br>
+console.log(age);  // 25<br>
+<br><br>
+Array Destructuring <br>
+const numbers = [1, 2, 3];<br>
+
+// Destructure array items<br>
+const [first, second] = numbers;<br>
+
+console.log(first);  // 1<br>
+console.log(second); // 2<br><br>
