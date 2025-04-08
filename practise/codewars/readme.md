@@ -136,6 +136,10 @@ The dollar sign $ asserts that the match must end at the end of the string. This
 This ensures that after the 4 or 6 digits, there are no extra characters.<br>
 The .test() method is called on the regex.<br><br>
 
+
+Optional chaining (?.) - It lets you safely access deeply nested properties without getting a runtime error if something in the chain is null or undefined. <br>
+?? Nullish Coalescing -  lets you provide a fallback only when the value is null or undefined (not for false, 0, '', etc.).
+<br><br>
 Assignment Operators <br>
 Operator	Equivalent To	Example <br>
 +=	        a = a + b	x += 5 (adds 5 to x) <br>
