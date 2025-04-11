@@ -1,15 +1,18 @@
-function likes(names) {  
-    let count = names.length  
-    if ( count === 0){
-        return "no one likes this"
-    } else if (count === 1){
-        return `${names} likes this`
-    } else if (count === 2) {
-        return `${names[0]} and ${names[1]} like this`
-    } else if (count === 3) {
-        return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+function duplicateEncode(word){
+    let lower = word.toLowerCase();
+    result = ''
+    for (let i = 0; i < word.length; i++){
+        let char = word[i]
+        console.log(`indexOf ${lower.indexOf(char)} - lastIndexOf ${lower.lastIndexOf(char)}`);
+        
+        if (lower.indexOf(char) === lower.lastIndexOf(char)) {
+            result += '(';
+        } else {
+            result += ')';
+        }
     }
-    return `${names[0]}, ${names[1]} and ${count - 2} others like this`;
+    return result
 }
-names = ["Alex", "Jacob", "Mark", "Max"]
-console.log(likes(names));
+console.log(duplicateEncode("diin"));
+
+ 
