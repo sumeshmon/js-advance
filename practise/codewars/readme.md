@@ -34,6 +34,10 @@ map(Number) : is a shorthand for converting all elements of an array to numbers.
 .includes() : method checks if a string or array contains a specific value. It returns true if the value is found, otherwise false. <br>
 
 .indexOf() : method searches for a value in a string or array and returns its index (position). If the value is not found, it returns -1.<br>
+string.indexOf(searchValue, startIndex) - startIndex means from which index search need to start<br>
+lastIndexOf - The last index at or before fromIndex, or -1 if not found.
+string.lastIndexOf(searchValue, fromIndex) - fromIndex  means the search start with backward from index<br>
+<br><br>
 
 repeat() :  repeating a string a specified number of times. It does not modify the original string but returns a new one. Works only on strings, not arrays. <br>
 
