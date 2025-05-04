@@ -15,6 +15,10 @@ reverse() : Reverses the array.<br>
     .join() : "H,e,l,l,o" (with commas)<br>
     .join('') : "Hello" (no separator)<br><br>
     
+.charCodeAt() - In JavaScript (and most programming languages), each character has a character code (also called Unicode or ASCII code). You can get it with:<br>
+'a'.charCodeAt(0); // 97
+'z'.charCodeAt(0); // 122
+<br><br>
 
 .slice() : to extract a portion of an array or string without modifying the original.<br><br>
 
@@ -138,7 +142,15 @@ The {4} means "exactly 4 occurrences" of a digit.<br>
 The pipe | acts as a logical OR.<br>
 The dollar sign $ asserts that the match must end at the end of the string. This ensures that after the 4 or 6 digits, there are no extra characters.<br>
 This ensures that after the 4 or 6 digits, there are no extra characters.<br>
-The .test() method is called on the regex.<br><br>
+The .test() method is called on the regex.<br>
+.test() is a method used with regular expressions to test if a pattern matches a given string.<br>
+const regex = /^[a-zA-Z]$/;  // Match a single letter (lowercase or uppercase)<br>
+const char = 'a';<br>
+console.log(regex.test(char));  // true<br>
+
+const anotherChar = '1';<br>
+console.log(regex.test(anotherChar));  // false<br>
+<br><br>
 
 
 Optional chaining (?.) - It lets you safely access deeply nested properties without getting a runtime error if something in the chain is null or undefined. <br>
