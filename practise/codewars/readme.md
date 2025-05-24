@@ -43,6 +43,10 @@ lastIndexOf - The last index at or before fromIndex, or -1 if not found.
 string.lastIndexOf(searchValue, fromIndex) - fromIndex  means the search start with backward from index<br>
 <br><br>
 
+JSON.stringify() : Converts a JavaScript object or value into a JSON string. Example '['string0', 'string1']'<br>
+JSON.parse() : Converts a JSON string back into a JavaScript object.
+
+<br><br>
 repeat() :  repeating a string a specified number of times. It does not modify the original string but returns a new one. Works only on strings, not arrays. <br>
 
 const indent = " ".repeat(4);<br>
