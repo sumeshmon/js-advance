@@ -4,6 +4,9 @@ const menu = [
     {item : 'Biriyani', price : 180}
 ]
 
+cashInCounter = 0
+orderQueue = []
+
 function addNewItem(newItem){
     menu.push(newItem)
     return menu
@@ -11,4 +14,15 @@ function addNewItem(newItem){
 
 const newItem = {item : 'Tea', price : 12}
 
-console.log(addNewItem (newItem));
+// console.log(addNewItem (newhgeItem));
+
+function  placeOrder (itemName) {
+   let  item = menu.find( sasi => sasi.item === 'Meals')
+    if( !itemName){
+            throw new Error ('not matching')
+    }
+    cashInCounter += item.item
+}
+
+
+console.log(cashInCounter)
