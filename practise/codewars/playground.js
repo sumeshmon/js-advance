@@ -1,6 +1,14 @@
-function cockroachSpeed(s) {
-    // let speed = Math.round((s * 100000) / 3600)
-    return Math.floor((s * 100000) / 3600)
-}
-console.log(cockroachSpeed(1.18));
+const menu = [
+    {item : 'Masala Dosahge', price : 80},
+    {item : 'Meals', price :100},
+    {item : 'Biriyani', price : 180}
+]
 
+function addNewItem(newItem){
+    menu.push(newItem)
+    return menu
+}
+
+const newItem = {item : 'Tea', price : 12}
+
+console.log(addNewItem (newItem));
