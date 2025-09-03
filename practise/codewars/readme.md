@@ -22,6 +22,9 @@ reverse() : Reverses the array.<br>
 
 .slice() : to extract a portion of an array or string without modifying the original.<br><br>
 
+.find() : The .find() method returns the first element in the array for which the callback returns a truthy value.<br>
+Since every object in the array has a non-empty name (which is truthy), it will stop at the first item:<br><br>
+
 Math.abs : returns the absolute value of a number, meaning it removes the negative sign if there is one.<br>
 Math.min() : returns the smallest number from a set of numbers.<br>
 Math.max() : returns the largest number from a set of numbers.<br>
