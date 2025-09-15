@@ -1,15 +1,18 @@
-const coding = ['javascript', 'typescript','react js','python']
-const mynum = [20,45,30,10,56,68]
+const myname = [1,2,3,4,4,5,2]
+let len = myname.length
 
-const testForEach = mynum.forEach( (param) =>{
-    //console.log(param);
-    
-} )
-// console.log(testForEach)
+const testLoop = function (){
+    let result = []
+    for ( let i = 0; i < len; i++){
+        for ( let j = 0; j < i; j++){
+            
+            result += '*'
+        }
+        result += '+\n'
+    }
+    return result
+}
 
 
-const testFilter = coding.filter( (param) =>{
-    console.log(param);
-    
-} )
-console.log(testFilter);
+console.log(testLoop());
+
