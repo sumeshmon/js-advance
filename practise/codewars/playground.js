@@ -1,7 +1,7 @@
 const menu = [
-    {name : 'Masala Dosa', price : 80},
-    {name : 'Meals', price :100},
-    {name : 'Biriyani', price : 180}
+    {item : 'Masala Dosahge', price : 80},
+    {item : 'Meals', price :100},
+    {item : 'Biriyani', price : 180}
 ]
 
 cashInCounter = 0
@@ -12,28 +12,17 @@ function addNewItem(newItem){
     return menu
 }
 
-const newItem = {name : 'Tea', price : 12}
-console.log('Testing find()', menu.find (item => item.price));
-// console.log(addNewItem (newItem));
+const newItem = {item : 'Tea', price : 12}
+
+// console.log(addNewItem (newhgeItem));
 
 function  placeOrder (itemName) {
-    
-    
-   const foundItem = menu.find(item => item.name === itemName);
+   let  item = menu.find( sasi => sasi.item === 'Meals')
     if( !itemName){
             throw new Error ('not matching')
     }
-    cashInCounter += foundItem.price
-
-    const order = {
-        name : itemName,
-        status : 'Ordered'
-    }
-    orderQueue.push(order)
-    return order
+    cashInCounter += item.item
 }
 
-const myOrder = placeOrder("Meals");
-console.log("Total cash in order rs: ",cashInCounter)
 
-console.log("Order Queue:", orderQueue);
+console.log(cashInCounter)

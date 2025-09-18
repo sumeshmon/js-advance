@@ -1,18 +1,13 @@
-const myname = [1,2,3,4,4,5,2]
-let len = myname.length
+let x = [100,200,300]
+let y = [100,200,300]
+let z = y
 
-const testLoop = function (){
-    let result = []
-    for ( let i = 0; i < len; i++){
-        for ( let j = 0; j < i; j++){
-            
-            result += '*'
-        }
-        result += '+\n'
-    }
-    return result
-}
+console.log('x === y',x === y);
+console.log('z === y',z === y);
+console.log('z === x',z === x);
 
+let arr=[1,2,3,4]
 
-console.log(testLoop());
+const filterArr = arr.map(  (e) => e>3)
 
+console.log(filterArr);
