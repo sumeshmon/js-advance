@@ -13,6 +13,5 @@ const testLoop = function (){
     return result
 }
 
-
 console.log(testLoop());
 
