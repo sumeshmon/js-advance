@@ -4,12 +4,12 @@ let len = myname.length
 const testLoop = function (){
     let result = []
     for ( let i = 0; i < len; i++){
-        for ( let j = 0; j < i; j++){
+        //result.push(myname[i])
+        if( !result.includes(myname[i])  ){
+            result.push(myname[i])
             
-            result += '*'
         }
-        result += '+\n'
-    }
+    }   
     return result
 }
 
