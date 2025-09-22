@@ -1,16 +1,6 @@
-const myname = [1,2,3,4,4,5,2]
-let len = myname.length
+  const arr = [1, 2, 3, 33, 5];
 
-const testLoop = function (){
-    let result = []
-    for ( let i = 0; i < len; i++){
-        //result.push(myname[i])
-        if( !result.includes(myname[i])  ){
-            result.push(myname[i])
-            
-        }
-    }   
-    return result
-}
-console.log(testLoop());
+    // const testSlice = arr.slice(0,3)
 
+    const testSplice = arr.splice(3, 1, 4);
+    console.log(testSplice);

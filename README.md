@@ -20,7 +20,11 @@ reverse() : Reverses the array.<br>
 'z'.charCodeAt(0); // 122
 <br><br>
 
-.slice() : to extract a portion of an array or string without modifying the original.<br><br>
+.slice() : to extract a portion of an array or string without modifying the original. Does not modify original array, returns a new copy.<br>
+
+.splice() : The splice() method is used to add, remove, or replace elements in an array. It changes (mutates) the original array.
+
+<br><br>
 
 .find() : The .find() method returns the first element in the array for which the callback returns a truthy value.<br>
 Since every object in the array has a non-empty name (which is truthy), it will stop at the first item:<br><br>
