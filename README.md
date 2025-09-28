@@ -179,6 +179,7 @@ words : words.sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "accent" })
 .filter() : Removes elements from an array based on a condition (returns a filtered array).<br><br>
 
 .map(): Transforms each element in an array and returns a new array.<br>
+
 .map(Number) : convert an array of strings (or other values) into an array of numbers.<br>
 const squares = numbers.map(num => num * num);<br><br>
 

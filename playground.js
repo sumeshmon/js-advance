@@ -1,8 +1,7 @@
-const arr = [1, 2, 3, 33, 5, 33];
-
-function test (){
-    const xyz = [22, 33];
-   return arr.concat(xyz)
+function print (a,b,...c){
+    console.log('a =>', a );
+    console.log('b =>', b );
+    console.log('c =>', c );
+    
 }
-
-console.log(test());
+console.log(print(2,3,4,5,6,7,89));
