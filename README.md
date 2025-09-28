@@ -20,9 +20,40 @@ reverse() : Reverses the array.<br>
 'z'.charCodeAt(0); // 122
 <br><br>
 
-.slice() : to extract a portion of an array or string without modifying the original. Does not modify original array, returns a new copy.<br>
+concat() - The concat() method is used to merge two or more arrays.<br>
+It does not change the original arrays — it returns a new array.
+<br>
+const arr = [1, 2];<br>
+const result = arr.concat(3, 4, [5, 6]);<br>
 
-.splice() : The splice() method is used to add, remove, or replace elements in an array. It changes (mutates) the original array.
+console.log(result); // [1, 2, 3, 4, 5, 6]<br>
+<br>
+Comparison with Spread (...)<br>
+const arr1 = [1, 2];<br>
+const arr2 = [3, 4];<br>
+
+const concatResult = arr1.concat(arr2);<br>
+const spreadResult = [...arr1, ...arr2];<br>
+
+console.log(concatResult); // [1, 2, 3, 4]<br>
+console.log(spreadResult); // [1, 2, 3, 4]<br>
+<br><br>
+
+.slice() : to extract a portion of an array or string without modifying the original. Does not modify original array, returns a new copy.<br><br>
+
+const arr = [1, 2, 3, 4, 5];<br>
+
+const sliced = arr.slice(1, 4); <br>
+console.log(sliced); // [2, 3, 4]<br>
+console.log(arr);    // [1, 2, 3, 4, 5]  (unchanged)
+<br><br>
+.splice() : The splice() method is used to add, remove, or replace elements in an array. It changes (mutates) the original array.<br>
+
+const arr = [1, 2, 3, 4, 5];<br>
+const removed = arr.splice(2, 2); <br>
+
+console.log(removed); // [3, 4]   -> removed elements<br>
+console.log(arr);     // [1, 2, 5] -> original array changed
 
 <br><br>
 
@@ -45,8 +76,11 @@ map(Number) : is a shorthand for converting all elements of an array to numbers.
 .includes() : method checks if a string or array contains a specific value. It returns true if the value is found, otherwise false. <br>
 
 .indexOf() : method searches for a value in a string or array and returns its index (position). If the value is not found, it returns -1.<br>
+
 string.indexOf(searchValue, startIndex) - startIndex means from which index search need to start<br>
+
 lastIndexOf - The last index at or before fromIndex, or -1 if not found.
+
 string.lastIndexOf(searchValue, fromIndex) - fromIndex  means the search start with backward from index<br>
 <br><br>
 
@@ -105,11 +139,16 @@ parseInt(var, 2)  : convert binary to a number<br>
     
 ...new Set(someString) : Creates a Set and immediately spreads it into an array. This method is often used to remove duplicates from an array.<br>
 
-new Set() : creates a Set object, which stores unique values.No duplicates are allowed in a Set()<br>
+new Set() : creates a Set object, which stores unique values.No duplicates are allowed in a Set()<br><br>
 
-let setExample = new Set([1, 2, 2, 3, 4, 4]);
-console.log(setExample); // Output: Set { 1, 2, 3, 4 }
-console.log(setExample.size); // Output: 4
+const arr = [1, 2, 3, 2, 4, 1, 5];<br>
+const unique = [...new Set(arr)];<br>
+
+console.log(unique); // [1, 2, 3, 4, 5]<br><br>
+
+let setExample = new Set([1, 2, 2, 3, 4, 4]);<br>
+console.log(setExample); // Output: Set { 1, 2, 3, 4 }<br>
+console.log(setExample.size); // Output: 4<br>
 <br>
 Set objects don't have array methods like .map() or .filter(), so sometimes, you need to convert them to an array.
 <br><br>

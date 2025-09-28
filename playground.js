@@ -1,6 +1,8 @@
-  const arr = [1, 2, 3, 33, 5];
+const arr = [1, 2, 3, 33, 5, 33];
 
-    // const testSlice = arr.slice(0,3)
+function test (){
+    const xyz = [22, 33];
+   return arr.concat(xyz)
+}
 
-    const testSplice = arr.splice(3, 1, 4);
-    console.log(testSplice);
+console.log(test());
