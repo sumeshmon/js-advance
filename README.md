@@ -205,7 +205,24 @@ const anotherChar = '1';<br>
 console.log(regex.test(anotherChar));  // false<br>
 <br><br>
 
+Object.entries(): It’s a built-in JavaScript method for objects.<br>
 
+It returns an array of [key, value] pairs from the object’s own enumerable properties.<br>
+
+const person = { name: "Sumesh", age: 30, country: "India" };<br>
+
+console.log(Object.entries(person));<br>
+[ ["name", "Sumesh"], ["age", 30], ["country", "India"] ]<br><br>
+
+const person = { name: "Sumesh", age: 30 };<br>
+
+for (const [key, value] of Object.entries(person)) {
+  console.log(`${key}: ${value}`);
+}
+<br>
+name: Sumesh
+age: 30
+<br><br>
 Optional chaining (?.) - It lets you safely access deeply nested properties without getting a runtime error if something in the chain is null or undefined. <br>
 ?? Nullish Coalescing -  lets you provide a fallback only when the value is null or undefined (not for false, 0, '', etc.).
 <br><br>
