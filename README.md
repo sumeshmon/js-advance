@@ -199,7 +199,7 @@ const char = 'a';<br>
 console.log(regex.test(char));  // true<br>
 
 const anotherChar = '1';<br>
-console.log(regex.test(anotherChar));  // false<br>
+console.log(regex.test(anotherChar));  // false
 <br><br>
 Object.entries(): It’s a built-in JavaScript method for objects.<br>
 
