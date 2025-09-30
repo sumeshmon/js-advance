@@ -38,7 +38,6 @@ const spreadResult = [...arr1, ...arr2];<br>
 console.log(concatResult); // [1, 2, 3, 4]<br>
 console.log(spreadResult); // [1, 2, 3, 4]<br>
 <br><br>
-
 .slice() : to extract a portion of an array or string without modifying the original. Does not modify original array, returns a new copy.<br><br>
 
 const arr = [1, 2, 3, 4, 5];<br>
@@ -54,9 +53,7 @@ const removed = arr.splice(2, 2); <br>
 
 console.log(removed); // [3, 4]   -> removed elements<br>
 console.log(arr);     // [1, 2, 5] -> original array changed
-
 <br><br>
-
 .find() : The .find() method returns the first element in the array for which the callback returns a truthy value.<br>
 Since every object in the array has a non-empty name (which is truthy), it will stop at the first item:<br><br>
 
@@ -204,7 +201,6 @@ console.log(regex.test(char));  // true<br>
 const anotherChar = '1';<br>
 console.log(regex.test(anotherChar));  // false<br>
 <br><br>
-
 Object.entries(): It’s a built-in JavaScript method for objects.<br>
 
 It returns an array of [key, value] pairs from the object’s own enumerable properties.<br>
@@ -212,10 +208,9 @@ It returns an array of [key, value] pairs from the object’s own enumerable pro
 const person = { name: "Sumesh", age: 30, country: "India" };<br>
 
 console.log(Object.entries(person));<br>
-[ ["name", "Sumesh"], ["age", 30], ["country", "India"] ]<br><br>
+[ ["name", "Sumesh"], ["age", 30], ["country", "India"] ]<br>
 
 const person = { name: "Sumesh", age: 30 };<br>
-
 for (const [key, value] of Object.entries(person)) {
   console.log(`${key}: ${value}`);
 }
