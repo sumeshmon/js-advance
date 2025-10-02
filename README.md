@@ -178,7 +178,13 @@ words : words.sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "accent" })
 .map(): Transforms each element in an array and returns a new array.<br>
 
 .map(Number) : convert an array of strings (or other values) into an array of numbers.<br>
-const squares = numbers.map(num => num * num);<br><br>
+<br>
+const squares = numbers.map(num => num * num);<br>
+
+important concept — .forEach() vs .map() <br>
+.forEach() → use when you just want to loop and do something (no return).
+.map() → use when you want to transform elements and return a new array.
+<br>
 
 .reduce() :	Condenses an array into a single value (sum, product, object, etc.).<br><br>
 

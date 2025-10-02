@@ -1,7 +1,15 @@
-const xyz = {
-    a:1,
-    b:2,
-    c:3
-}
+const myarr = [1,'C', 3, 'sumesh', 'd']
 
-console.log(Object.entries(xyz));
+const num = []
+const str = []
+const chr = []
+
+const result = myarr.filter ( (item) => {
+   if(typeof item === 'string') {
+    return item
+   } else {
+    return item
+   }
+})
+
+console.log(result);
